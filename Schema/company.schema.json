@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/szv/BachelorArbeit2_Szvetecz/main/Schema/company.schema.json",
+    "title": "Company",
+    "description": "Represents a company, owning a project.",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "The name of the company.",
+            "type": "string",
+            "minLength": 5,
+            "maxLength": 200
+        },
+        "email": {
+            "description": "The contact email address of the company.",
+            "type": "string"
+        }
+    },
+    "required": ["name", "email"]
+}

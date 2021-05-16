@@ -1,0 +1,32 @@
+{
+    "$schema": "https://raw.githubusercontent.com/szv/BachelorArbeit2_Szvetecz/main/Schema/project.schema.json",
+    "name": "project1",
+    "description": "Ich bin ein Project",
+    "company": {
+        "name": "company1",
+        "email": "test@fhwn.ac.at"
+    },
+    "devices": [
+        {
+            "setupId": "9d7f453b-aa83-4d39-ac41-15ef6c7a6a80",
+            "name": "device1",
+            "description": "A device",
+            "interval": 60,
+            "actors": [
+                {
+                    "name": "actor1",
+                    "description": "A actor",
+                    "type": "switch"
+                }
+            ],
+            "measurements": [
+                {
+                    "name": "measurement1",
+                    "description": "A measurement",
+                    "unit": "celcius",
+                    "interval": 20
+                }
+            ]
+        }
+    ]
+}

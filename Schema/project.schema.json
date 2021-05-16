@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/szv/BachelorArbeit2_Szvetecz/main/Schema/project.schema.json",
+    "title": "Project",
+    "description": "Represents a project.",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "The name of the project.",
+            "type": "string",
+            "minLength": 5,
+            "maxLength": 200
+        },
+        "description": {
+            "description": "The description of the project.",
+            "type": "string",
+            "maxLength": 1000
+        },
+        "company": {
+            "description": "The company of the project.",
+            "type": "object",
+            "$ref": "https://raw.githubusercontent.com/szv/BachelorArbeit2_Szvetecz/main/Schema/company.schema.json"
+        },
+        "devices": {
+            "description": "The devices contained by this project.",
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/szv/BachelorArbeit2_Szvetecz/main/Schema/device.schema.json"
+            }
+        }
+    },
+    "required": ["name"]
+}

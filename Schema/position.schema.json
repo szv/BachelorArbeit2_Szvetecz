@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/szv/BachelorArbeit2_Szvetecz/main/Schema/position.schema.json",
+    "title": "Position",
+    "description": "A position, represented by coordinates (decimal).",
+    "type": "object",
+    "properties": {
+        "lat": {
+            "type": "number",
+            "description": "The latitudinal coordinate of the position. E.g. 47.8303295",
+            "minimum": -90,
+            "maximum": 90
+        },
+        "lon": {
+            "type": "number",
+            "description": "The longitudinal coordinate of the position. E.g. 16.2562515",
+            "minimum": -180,
+            "maximum": 180
+        }
+    },
+    "required": ["lat", "lon"]
+}

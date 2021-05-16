@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DeviceAgent": {
+      "commandName": "Project",
+      "remoteDebugEnabled": false
+    }
+  }
+}

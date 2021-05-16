@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/szv/BachelorArbeit2_Szvetecz/main/Schema/data.schema.json",
+    "title": "Data",
+    "description": "Represents a measured value.",
+    "type": "object",
+    "properties": {
+        "value": {
+            "type": "number",
+            "description": "The measured value."
+        },
+        "position": {
+            "description": "The coordinate, where the value was measured. If no position is sent, the current position corresponds to the last measured position.",
+            "$ref": "https://raw.githubusercontent.com/szv/BachelorArbeit2_Szvetecz/main/Schema/position.schema.json"
+        }
+    },
+    "required": ["value"]
+}

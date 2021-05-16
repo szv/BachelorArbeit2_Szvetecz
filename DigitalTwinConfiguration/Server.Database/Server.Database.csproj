@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Server.Database</AssemblyName>
+    <RootNamespace>Server.Database</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Context\ApplicationDbContext.cs~RFcd09289.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.5.1" />
+  </ItemGroup>
+
+</Project>
